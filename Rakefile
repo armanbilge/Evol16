@@ -10,7 +10,7 @@ file 'nondiff.pdf' => 'nondiff.py' do |t|
   sh "python3 #{t.source}"
 end
 
-file 'animation.mp4' => ['animate.py', 'motion.txt'] do |t|
+file 'animation.mp4' => ['animate.py', 'motion.txt', 'surface.txt'] do |t|
   sh "python3 #{t.source}"
 end
 
